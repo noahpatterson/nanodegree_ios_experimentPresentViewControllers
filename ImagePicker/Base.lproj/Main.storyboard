@@ -24,19 +24,35 @@
                                     <action selector="presentImagePicker:" destination="BYZ-38-t0r" eventType="touchUpInside" id="get-aV-aLp"/>
                                 </connections>
                             </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pOD-gq-bmd">
+                                <rect key="frame" x="0.0" y="512" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="action" id="XA2-Gc-9kx">
+                                        <connections>
+                                            <action selector="openAction:" destination="BYZ-38-t0r" id="wTx-Rm-LhQ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Vel-OK-834" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="M9J-pf-6D7"/>
-                            <constraint firstItem="Vel-OK-834" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uLg-jb-gVD"/>
+                            <constraint firstItem="Vel-OK-834" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="88P-Y6-jhi"/>
+                            <constraint firstItem="pOD-gq-bmd" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Arp-kn-KlU"/>
+                            <constraint firstItem="Vel-OK-834" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MXk-JC-JYg"/>
+                            <constraint firstItem="pOD-gq-bmd" firstAttribute="centerX" secondItem="Vel-OK-834" secondAttribute="centerX" id="SpE-MS-4FU"/>
+                            <constraint firstItem="pOD-gq-bmd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bVQ-Xh-fV4"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="imagePickerButton" destination="Vel-OK-834" id="kFn-zR-94v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="322" y="323"/>
         </scene>
     </scenes>
 </document>

@@ -26,6 +26,13 @@ class ViewController: UIViewController {
         
         self.presentViewController(imagePickerVC, animated: true, completion: nil)
     }
+    
+    @IBAction func openAction(sender: AnyObject) {
+        let image = UIImage()
+        let actionVC = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        
+        self.presentViewController(actionVC, animated: true, completion: nil)
+    }
 
 }
 
