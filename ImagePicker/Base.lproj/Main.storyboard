@@ -32,6 +32,12 @@
                                             <action selector="openAction:" destination="BYZ-38-t0r" id="wTx-Rm-LhQ"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem width="36" systemItem="fixedSpace" id="A04-bs-dmW"/>
+                                    <barButtonItem title="Alert!" id="swt-DS-Ric">
+                                        <connections>
+                                            <action selector="alert:" destination="BYZ-38-t0r" id="hIF-hs-SkK"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>

@@ -34,5 +34,15 @@ class ViewController: UIViewController {
         self.presentViewController(actionVC, animated: true, completion: nil)
     }
 
+    @IBAction func alert(sender: AnyObject) {
+        let alertVC = UIAlertController(title: "Alert!", message: "This is an alert", preferredStyle: .ActionSheet)
+        let dismissAction = UIAlertAction(title: "Dismiss", style: .Cancel, handler: {
+            action in self.dismissViewControllerAnimated(true, completion: nil)
+        })
+        
+        alertVC.addAction(dismissAction)
+        
+        self.presentViewController(alertVC, animated: true, completion: nil)
+    }
 }
 
